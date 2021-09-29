@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom css */
+
+* *::after *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primery: rgb(105, 198, 186);
+  --secondary: #c66995;
+  --background: #291c13;
+}
+header {
+  padding: 20px 250px;
+}
+
+.navbar a {
+  color: black;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.home-nav a {
+  color: var(--primery);
+}
+
+main {
+  background-color: #e6e6e6;
+  padding: 0 150px;
+}
+.hero {
+  background-image: url(../media/banner.jpg);
+  height: 100vh;
+}
+.rgba {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+form {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+}
+.hero-top {
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 80px;
+}
+.hero-top p {
+  font-size: 24px;
+}
+.circle {
+  display: inline-block;
+  margin: 20px;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: turquoise;
+}
+.fieldset {
+  flex: 0 1 50%;
+}
+.room-1 {
+  padding: 1.5%;
+  margin: 1.5%;
+}
+fieldset input {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+}
+.destination {
+  width: 80%;
+}
+button {
+  padding: 15px 10px;
+  margin-top: 20px;
+  background-color: var(--primery);
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+.btn-primery {
+  margin: 5%;
+  width: 90%;
+}
+
+.room {
+  width: 90%;
+}
+.person {
+  width: 60%;
+}
+.stay-time {
+  width: 80%;
+}
+.priority {
+  background-color: #efefef;
+  padding: 50px 10%;
+  text-align: center;
+}
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+h3 strong {
+  font-weight: 700;
+}
+.priority p {
+  font-size: 14px;
+}
+
+.sqr {
+  margin: 1px;
+  padding: 12px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.europe-article {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  left: 410px;
+}
+.relative {
+  position: relative;
+}
+.europe {
+  width: 100%;
+  background-color: white;
+}
+.text {
+  font-size: 12px;
+  color: white;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.col-text {
+  width: 74%;
+  padding: 32px;
+  background-color: var(--primery);
+}
+.btn-europe {
+  padding: 10px;
+  background-color: white;
+  margin-top: 12px;
+  color: var(--primery);
+}
+.artical-img {
+  width: 50%;
+}
+.artical-img img {
+  width: 100%;
+}
+.asia-article {
+  display: flex;
+  align-items: center;
+}
+.asia-article {
+  display: flex;
+  align-items: center;
+  width: 76%;
+  padding: 20px;
+  background-color: var(--secondary);
+}
+.artical-asia {
+  width: 100%;
+}
+.asia-img {
+  padding-left: 50%;
+  width: 50%;
+}
+.asia-img img {
+  width: 100%;
+}
+.asia {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: right;
+}
+.col-text-2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+  right: 39%;
+}
+.col-1 {
+  padding: 32px;
+  background-color: var(--secondary);
+}
+.btn-asia {
+  padding: 10px;
+  background-color: white;
+  margin-top: 12px;
+  color: var(--secondary);
+}
+.world-map {
+  display: flex;
+  /* background-color: var(--primery); */
+}
+.box {
+  width: 15%;
+  height: 15%;
+  background-color: var(--primery);
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 15%;
+  text-align: center;
+  padding: 20px;
+}
+.box img {
+  width: 80%;
+}
+.box a {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+.box a:hover {
+  color: black;
+}
+.place {
+  background-color: white;
+  padding: 50px 10%;
+}
+.rectangal {
+  margin: 20px;
+  background-color: white;
+  border: 2px solid rgb(238, 238, 238);
+}
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.resort-text {
+  padding: 20px;
+}
+.resort-text p {
+  font-size: 12px;
+  color: gray;
+}
+.resort-text a {
+  font-size: 14px;
+  padding: 10px 0;
+  color: var(--secondary);
+}
+.tail-color {
+  background-color: var(--primery);
+}
+.tail p {
+  line-height: 2.5;
+  font-size: 14px;
+  color: white;
+}
+.tail strong {
+  padding: 60px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.btn-center {
+  margin-left: 40%;
+}
+.map {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+}
+.contact-us {
+  width: 90%;
+}
+.contact-us input {
+  width: 40%;
+  background-color: #e6e6e6;
+}
+.contact-us textarea {
+  width: 93%;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+#subject {
+  width: 94%;
+}
+#button {
+  width: 100%;
+  background-color: var(--primery);
+}
+footer {
+  background-color: #e6e6e6;
+  padding: 0 150px;
+  text-align: center;
+}
+.foot {
+  background-color: var(--primery);
+  padding: 30px 0;
+}
+small {
+  color: white;
+  font-size: 14px;
+}
